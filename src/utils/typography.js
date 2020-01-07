@@ -1,8 +1,7 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
-import Tofu  from "typography-theme-japanese-tofu"
+import Tofu from "typography-theme-japanese-tofu"
 
-Wordpress2016.overrideThemeStyles = () => {
+Tofu.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -10,7 +9,7 @@ Wordpress2016.overrideThemeStyles = () => {
   }
 }
 
-delete Wordpress2016.googleFonts
+// delete Tofu.googleFonts
 
 const typography = new Typography(Tofu)
 
@@ -20,5 +19,4 @@ if (process.env.NODE_ENV !== `production`) {
 }
 
 export default typography
-export const rhythm = typography.rhythm
-export const scale = typography.scale
+export const { rhythm, scale } = typography
