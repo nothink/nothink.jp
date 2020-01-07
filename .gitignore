@@ -70,3 +70,6 @@ yarn-error.log
 
 # for Firebase
 .firebase
+
+# I won't bee keep lockfiles
+yarn.lock

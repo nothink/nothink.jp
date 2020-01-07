@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `nothink.jp`,
     author: `@nothink`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `nothink のメモ置き場など`,
     siteUrl: `https://nothink.jp/`,
     social: {
       twitter: `nothink`,
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `nothink.jp`,
+        short_name: `nothink.jp`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -76,5 +76,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `@micalgenus/gatsby-plugin-github-avatar`,
+      options: {
+        username: `nothink`,
+        default: 33431,
+      },
+    },
   ],
 }
